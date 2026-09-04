@@ -1,0 +1,12 @@
+[build-system]
+requires=["setuptools>=69"]
+build-backend="setuptools.build_meta"
+[project]
+name="netwatch"
+version="0.1.0"
+description="Read-only local network connection monitor"
+requires-python=">=3.10"
+[project.scripts]
+netwatch="netwatch.cli:main"
+[tool.setuptools.packages.find]
+where=["src"]
